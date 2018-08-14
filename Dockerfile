@@ -7,3 +7,7 @@ RUN apt-get update && apt-get install -y \
     npm \
     ssh \
     && rm -rf /var/lib/apt/lists/*
+
+# Install gulp globaly
+RUN npm install gulp -g \
+    && npm cache clean
