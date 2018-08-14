@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 # Install Packages
-RUN apt update && apt install -y \
+RUN apt-get update && apt-get install -y \
     git \
     nodejs \
     npm \
